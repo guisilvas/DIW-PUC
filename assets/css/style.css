@@ -1,0 +1,239 @@
+/* Padrão */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Corpo do site */
+body {
+    background-color: #fff;
+    height: 100vh;
+}
+
+main {
+    padding: 40px 4%;
+}
+
+header {
+    padding: 20px;
+  }
+
+  .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+
+  #title {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    background: none;
+    border: none;
+  }
+
+  .menu-desktop ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .menu-desktop ul li {
+    margin-left: 20px;
+  }
+
+  .menu-desktop ul li:first-child {
+    margin-left: 0;
+  }
+
+  .menu-desktop ul li a {
+    color: #000;
+    text-decoration: none;
+    margin: 20px;
+  }
+
+  .menu-desktop ul li a:hover {
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 768px) {
+    .interface {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .menu-desktop ul {
+      flex-direction: column;
+    }
+
+    .menu-desktop ul li {
+      margin-left: 0;
+      margin-bottom: 10px;
+    }
+  }
+
+.section {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Perfil */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .image {
+    flex: 1;
+    margin-right: 20px;
+  }
+
+  .image img {
+    max-width: 100%;
+    height: auto;
+    width: 250px;
+  }
+
+  .text {
+    flex: 2;
+    text-align: justify;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .icons a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+  }
+
+  .icons a:hover {
+    color: #000;
+  }
+
+  /* Carrosel */
+.carousel {
+    margin: 5%;
+}
+
+.carousel-item img {
+    max-height: 1000px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+
+.item {
+text-align: center;
+}
+
+.item img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+  /* Rodapé */
+.footer {
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .image,
+    .text {
+      margin-right: 0;
+      flex: auto;
+      width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* repo.html */
+  .repo-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .details {
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  .detail-text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .detail {
+    margin-bottom: 10px;
+  }
+
+  .detail span {
+    font-weight: bold;
+  }
+
+  .btts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btt {
+    padding: 10px 20px;
+    margin: 0 5px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: justify;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    .detail-text {
+      font-size: 16px;
+    }
+  }
